@@ -1,0 +1,34 @@
+﻿<Items>
+<Appointment Start="07/12/2010 11:05:00" End="07/12/2010 14:30:00" Description="Rent this car " Label="2" Location="city" ResourceId="1" Status="3" Subject="Mr.Brown" />
+<Appointment Start="07/14/2010 08:15:00" End="07/16/2010 16:40:00" Description="Scheduled repair of this car" Label="4" Location="Service Center" ResourceId="1" Status="2" Subject="Repair" />
+<Appointment Start="07/13/2010 10:00:00" End="07/15/2010 17:00:00" Description="Rent this car" Label="3" Location="city" ResourceId="1" Status="3" Subject="Mr.White" />
+<Appointment Start="07/15/2010 19:45:00" End="07/15/2010 22:45:00" Description="Check up after maintenance" Label="5" Location="Service Center" ResourceId="1" Status="4" Subject="Check up" />
+<Appointment Start="07/11/2010 00:00:00" End="07/12/2010 00:00:00" AllDay="True" Description="Rent this car for the all day" Label="3" Location="city" ResourceId="1" Status="3" Subject="Mr.Green" />
+<Appointment Start="07/11/2010 10:00:00" End="07/12/2010 11:45:00" Description="Rent this car" Label="3" Location="out-of-town" ResourceId="3" Status="3" Subject="Mrs.Black" />
+<Appointment Start="07/12/2010 13:00:00" End="07/12/2010 14:30:00" Description="Rent this car" Label="3" Location="out-of-town" ResourceId="3" Status="3" Subject="Mrs.Black" />
+<Appointment Start="07/13/2010 15:30:00" End="07/14/2010 14:00:00" Description="Rent this car" Label="3" Location="out-of-town" ResourceId="3" Status="3" Subject="Mrs.Black" />
+<Appointment Type="1" Start="07/05/2010 16:40:00" End="07/05/2010 17:50:00" Description="Wash this car in the garage" Label="1" Location="Garage" ResourceId="1" Status="1" Subject="Wash">
+<RecurrenceInfo Start="07/05/2010 16:30:00" End="08/01/2010 00:00:00" WeekOfMonth="0" WeekDays="62" Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Month="12" Range="2" Type="1" />
+</Appointment>
+<Appointment Type="3" Start="07/13/2010 18:30:00" End="07/13/2010 20:00:00" Description="Wash this car in the garage" Label="1" Location="Garage" Status="1" Subject="Wash">
+<RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="6" />
+</Appointment>
+<Appointment Type="4" Start="07/14/2010 16:20:00" End="07/14/2010 17:40:00" Description="Wash this car in the garage" Label="1" Location="Garage" Status="1" Subject="Wash">
+<RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="7" />
+</Appointment>
+<Appointment Type="3" Start="07/20/2010 15:00:00" End="07/20/2010 16:30:00" Description="Wash this car in the garage" Label="1" Location="Garage" Status="1" Subject="Wash">
+<RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="11" />
+</Appointment>
+<Appointment Type="3" Start="07/22/2010 16:30:00" End="07/22/2010 17:00:00" Description="Wash this car in the garage" Label="1" Location="Garage" Status="1" Subject="Wash">
+<RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="13" />
+</Appointment>
+<Appointment Type="4" Start="07/11/2010 16:25:00" End="07/11/2010 17:45:00" Description="Wash this car in the garage" Label="1" Location="Garage" Status="1" Subject="Wash">
+<RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="4" />
+</Appointment>
+<Appointment Type="1" Start="07/11/2010 07:30:00" End="07/11/2010 08:45:00" Description="Wash this car in the garage" Label="2" Location="Garage" ResourceId="3" Status="1" Subject="Wash">
+<RecurrenceInfo Start="07/11/2010 07:00:00" End="08/24/2010 01:00:00" WeekOfMonth="0" WeekDays="42" Id="51c81018-53fa-4d10-925f-2ed7f8408c75" Month="12" Range="2" Type="1" />
+</Appointment>
+<Appointment Type="3" Start="07/20/2010 01:30:00" End="07/20/2010 09:00:00" Description="Wash this car in the garage" Label="2" Location="Garage" Status="1" Subject="Wash">
+<RecurrenceInfo Id="51c81018-53fa-4d10-925f-2ed7f8408c75" Index="4" />
+</Appointment>
+</Items>
