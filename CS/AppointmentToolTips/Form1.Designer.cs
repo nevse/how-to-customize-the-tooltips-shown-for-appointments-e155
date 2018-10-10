@@ -45,7 +45,7 @@ namespace CustomAppointmentEditForm {
             DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
             DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
-            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
+            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
             this.dateNavigator1 = new DevExpress.XtraScheduler.DateNavigator();
             this.splitterControl1 = new DevExpress.XtraEditors.SplitterControl();
@@ -71,18 +71,12 @@ namespace CustomAppointmentEditForm {
             this.schedulerControl1.Name = "schedulerControl1";
             this.schedulerControl1.Size = new System.Drawing.Size(600, 500);
             this.schedulerControl1.Start = new System.DateTime(2008, 10, 1, 0, 0, 0, 0);
-            this.schedulerControl1.Storage = this.schedulerStorage1;
+            this.schedulerControl1.DataStorage = this.schedulerStorage1;
             this.schedulerControl1.TabIndex = 0;
             this.schedulerControl1.Text = "schedulerControl1";
             this.schedulerControl1.ToolTipController = this.toolTipController1;
             this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
             this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler2);
-            // 
-            // schedulerStorage1
-            // 
-            this.schedulerStorage1.AppointmentsInserted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage_AppointmentsChanged);
-            this.schedulerStorage1.AppointmentsChanged += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage_AppointmentsChanged);
-            this.schedulerStorage1.AppointmentsDeleted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage_AppointmentsChanged);
             // 
             // dateNavigator1
             // 
@@ -173,7 +167,7 @@ namespace CustomAppointmentEditForm {
         #endregion
 
         private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
-        private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
+        private DevExpress.XtraScheduler.SchedulerDataStorage schedulerStorage1;
         private DevExpress.XtraScheduler.DateNavigator dateNavigator1;
         private DevExpress.XtraEditors.SplitterControl splitterControl1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;

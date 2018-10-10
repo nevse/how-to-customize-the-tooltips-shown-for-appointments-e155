@@ -16,12 +16,6 @@ namespace CustomAppointmentEditForm {
             InitializeComponent();
             schedulerControl1.ToolTipController = toolTipController1;
 
-            this.schedulerStorage1.AppointmentsChanged += schedulerStorage_AppointmentsChanged;
-            this.schedulerStorage1.AppointmentsInserted += schedulerStorage_AppointmentsChanged;
-            this.schedulerStorage1.AppointmentsDeleted += schedulerStorage_AppointmentsChanged;
-
-            this.schedulerControl1.AppointmentViewInfoCustomizing += SchedulerControl1_AppointmentViewInfoCustomizing;
-
             resImage = Image.FromFile(@"..\..\Images\appointment.gif");
             toolTipController1.ShowBeak = true;
 
@@ -32,6 +26,13 @@ namespace CustomAppointmentEditForm {
             FillData();
 
             schedulerControl1.OptionsCustomization.AllowDisplayAppointmentFlyout = false;
+
+            this.schedulerStorage1.AppointmentsChanged += schedulerStorage_AppointmentsChanged;
+            this.schedulerStorage1.AppointmentsInserted += schedulerStorage_AppointmentsChanged;
+            this.schedulerStorage1.AppointmentsDeleted += schedulerStorage_AppointmentsChanged;
+
+            this.schedulerControl1.AppointmentViewInfoCustomizing += SchedulerControl1_AppointmentViewInfoCustomizing;
+
         }
 
         #region #tooltip_EmptySubject
